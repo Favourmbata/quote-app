@@ -178,7 +178,7 @@ const QuoteDetails = () => {
         
       
         <div className="flex mt-4 space-x-6">
-           <div className="text-left ml-[67%] md:ml-0 sm:ml-0">
+           <div className="text-left ml-[67%] ">
             <p>Sub Total</p>
              <p>Total</p>
            </div>
