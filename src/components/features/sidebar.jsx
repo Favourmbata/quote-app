@@ -14,6 +14,10 @@ import Solid from "./assets/Solid.png";
 import barge from "./assets/Badge.png";
 import image from "../features/assets/Image.png";
 import signout from "../features/assets/sign-out.png";
+import { IoMdMenu } from "react-icons/io";
+
+
+
 
 const Sidebar = () => {
   const [isProcurementOpen, setIsProcurementOpen] = useState(false);
@@ -39,8 +43,8 @@ const Sidebar = () => {
         className="fixed top-4 left-4 z-50 block lg:hidden p-2 bg-gray-200 rounded-md"
         onClick={toggleSidebar}
       >
-    
-        <img src={Solid} alt="Toggle Menu" />
+          <IoMdMenu />
+        {/* <img src={Solid} alt="Toggle Menu" /> */}
       </button>
 
      

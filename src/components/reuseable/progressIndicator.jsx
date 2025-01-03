@@ -9,16 +9,16 @@ const ProgressIndicator = ({ activeStep, setActiveStep }) => {
   ];
 
   return (
-    <div className="w-full px-6 py-6 ">
-      <div className="flex items-center justify-between w-full px-6 py-4 rounded-lg shadow">
+    <div className="w-full px-6 py-6">
+      <div className="flex flex-col md:flex-row items-center justify-between w-full px-6 py-4 rounded-lg shadow">
         {steps.map(({ step, title }) => (
           <div
             key={step}
-            className="flex items-center cursor-pointer"
+            className="flex flex-col md:flex-row mb-6 md:0 items-center cursor-pointer w-full md:w-auto"
             onClick={() => setActiveStep(step)} 
           >
             <div
-              className={`flex items-center justify-center w-8 h-8 rounded-full font-bold ${
+              className={`flex items-center justify-center w-8 h-8 rounded-full font-bold md:mb-0 md:mr-4 ${
                 activeStep === step
                   ? 'bg-green-500 text-white' 
                   : step < activeStep

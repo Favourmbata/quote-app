@@ -14,9 +14,9 @@ const MultiStepForm = () => {
   const [activeStep, setActiveStep] = useState(1);
 
   return (
-    <div className="flex flex-col lg:flex-row">
+    <div className="flex flex-col lg:flex-row overflow-x-hidden">
      
-      <div className="lg:w-1/4 w-full lg:flex-shrink-0">
+      <div className="lg:w-1/4 w-full lg:flex-shrink-0 ">
         <Sidebar />
       </div>
 
